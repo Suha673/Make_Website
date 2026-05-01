@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Lumina Beauty Studio</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">L</span><span>Lumina Beauty Studio</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="ghost-btn" href="contact.html#booking">Book Now</a>
+      <button class="outline-btn" data-open-auth>Login / Signup</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero about-hero">
+      <div>
+        <p class="eyebrow">Meet the artist</p>
+        <h1>Owned by a beauty professional who believes confidence should feel effortless.</h1>
+      </div>
+    </section>
+
+    <section class="owner-section">
+      <img src="https://images.unsplash.com/photo-1595475884562-073c30d45670?auto=format&fit=crop&w=900&q=80" alt="Beauty salon owner preparing makeup tools">
+      <div>
+        <p class="eyebrow">Owner profile</p>
+        <h2>Priya Sharma, Makeup Artist & Salon Specialist</h2>
+        <p>Priya founded Lumina Beauty Studio after years of working with brides, models, and everyday clients who wanted beauty services that felt personal, hygienic, and premium. Her work blends soft glam, modern Indian bridal detailing, skin-first preparation, and polished hair styling.</p>
+        <p>She focuses on listening first: understanding the client’s outfit, skin type, comfort level, event timing, and photography needs before building the final look.</p>
+        <div class="stats">
+          <span><strong data-count-to="8">1</strong> Years experience</span>
+          <span><strong data-count-to="1200">1</strong> Happy clients</span>
+          <span><strong data-count-to="350">1</strong> Bridal looks</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section warm-band">
+      <div class="section-heading">
+        <p class="eyebrow">How we work</p>
+        <h2>From consultation to final touch-up</h2>
+      </div>
+      <div class="process-grid">
+        <article><span>01</span><h3>Consult</h3><p>Discuss the occasion, preferred look, skin needs, outfit, and schedule.</p></article>
+        <article><span>02</span><h3>Prepare</h3><p>Clean tools, fresh products, skincare prep, and a calm appointment flow.</p></article>
+        <article><span>03</span><h3>Create</h3><p>Makeup, hair, and finishing details are layered for comfort and durability.</p></article>
+        <article><span>04</span><h3>Support</h3><p>Clients receive touch-up tips, package suggestions, and after-care guidance.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">L</span><span>Lumina Beauty Studio</span></a>
+        <p>Modern makeup, hair, skin, and beauty salon services for weddings, parties, shoots, and everyday confidence.</p>
+      </div>
+      <div><h3>Contact</h3><p>+91 98765 43210</p><p>hello@luminabeauty.com</p><p>MG Road, City Center, India</p></div>
+      <div>
+        <h3>Follow</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M4 5.5l6.7 7.2L4.4 19h2.9l4.8-4.7 4.4 4.7H20l-6.6-7.1L19.3 5h-2.9l-4.5 4.4L7.8 5H4z"></path></svg></a>
+        </div>
+      </div>
+      <form class="feedback-form" data-form-type="feedback"><h3>Feedback</h3><label>Your experience<textarea rows="3" name="experience" placeholder="Tell us what you loved" required></textarea></label><button class="light-btn" type="submit">Send Feedback</button><p class="form-note" data-feedback-message></p></form>
+    </div>
+    <p class="copyright">© 2026 Lumina Beauty Studio. All rights reserved.</p>
+  </footer>
+
+  <dialog class="auth-modal" id="auth-modal">
+    <button class="modal-close" data-close-auth aria-label="Close">×</button>
+    <h2>Welcome to Lumina</h2>
+    <p>Login or create an account to manage bookings and beauty packages.</p>
+    <form data-form-type="auth"><label>Email <input type="email" name="email" placeholder="you@example.com" required></label><label>Password <input type="password" name="password" placeholder="Password" minlength="6" required></label><button class="primary-btn" type="submit">Continue</button><div class="auth-divider">or</div><button class="google-btn" type="button" data-google-login><span class="google-icon">G</span> Continue with Google</button><p class="form-note" data-form-message></p></form>
+  </dialog>
+  <script src="script.js?v=4"></script>
+</body>
+</html>
